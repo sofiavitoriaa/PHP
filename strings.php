@@ -46,6 +46,7 @@
 
         echo "<br>";
 
+        // Sintaxe heredoc
         $canal = "Curso em Vídeo";
         $ano = date('Y');
         echo <<< TESTE
@@ -55,6 +56,17 @@
             Abraços! \u{1F596}
         TESTE;
 
+        echo "<br>";
+
+        // Sintaxe nowdoc
+        $canal2 = "Curso em Vídeo";
+        $ano2 = date('Y');
+        echo <<< 'TESTE'
+            Olá galera do $canal2!
+                Tudo bem com vocês?
+                Como Está sendo esse ano de $ano2?
+            Abraços! \u{1F596}
+        TESTE;
     ?>
 </body>
 </html>
