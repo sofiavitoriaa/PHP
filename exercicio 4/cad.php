@@ -13,8 +13,8 @@
     </header>
     <main>
         <?php 
-            $n = $_GET["nome"];
-            $s = $_GET["sobrenome"];
+            $n = $_GET["nome"] ?? "sem nome";
+            $s = $_GET["sobrenome"] ?? "desconhecido(a)";
             echo "<p> É um prazer te conhecer, <strong>$n $s</strong>! Este é o meu site!";
         ?>
         <p> <a href="javascript:history.go(-1)"> Voltar para a página anterior </a> </p>
