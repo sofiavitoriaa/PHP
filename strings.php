@@ -23,6 +23,26 @@
         echo "<br>";
 
         echo "Estamos no ano de " . date("Y");
+
+        echo "<br>";
+
+        $nom = "Rodrigo";
+        $snom = "Nogueira";
+        echo "$nom \"Minotauro\" $snom"; // Sequência de escape
+        /* 
+            \n nova linha
+            \t tabulação horizontal
+            \\ barra invertida
+            \$ sinal de cifrão
+            \u{} codepoint unicode
+        */
+
+        echo "<br>";
+
+        $n = "Gustavo";
+        $s = "Guanabara";
+        $a = "Gafanhoto";
+        echo "$n \"$a\" $s";
     ?>
 </body>
 </html>
